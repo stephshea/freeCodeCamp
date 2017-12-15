@@ -15,3 +15,17 @@ function pairElement(str) {
 	return mainArray;
 }
 pairElement("CGCTAGCA");
+
+//more efficient
+
+function pairElement(str) {
+	 var dnaMap = {C:"G", G:"C", A:"T", T:"A"};
+  
+  
+  var pairArray = [];
+	for (var i = 0; i < str.length; i++) {
+      pairArray.push([str[i], dnaMap[str[i]]]);
+	}
+	return pairArray;
+}
+pairElement("CGCTAGCA");
