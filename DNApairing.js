@@ -1,3 +1,4 @@
+//my code
 function pairElement(str) {
 	 var mainArray = [];
   
