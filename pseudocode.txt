@@ -1,0 +1,143 @@
+FCC Missing Letters Understanding
+
+All about data: Inputs and outputs
+
+Input - String. Alphabetical characters ‘a-z, no wraparound’ ...meaning no xyzabc no limit specified. Not case specific. A!=a, may start on any letter.
+MVP: Minimum Viable Product  - don’t code extra stuff -- get what needs to be done and not more
+
+Output - missing character or undefined. Only a possible missing letter. Is possible to not have any missing.
+
+Solution
+
+Example
+Input: “abce” Output  ‘d’
+
+1 get the first letter = firstChar
+2 Check if next character is the next character in alphabet
+3 Check if another character is available (length)
+4 Repeat line 2 with next character
+5 else
+6 Return undefined
+7 else
+Return expected character
+		
+String.prototype refers to a variable containing a string
+
+
+FCC DNA Pairing
+
+Input - string of “unmatched dna segments” => Letters “ATCG”, will give only one case (capital), No limit to input length.
+
+Output - array of dna pairs => 2 char arrays. A<->T && C<-> G, same length as the input
+
+Solution
+
+Input: GCG Output [[G,C], [C,G], [G,C]]
+
+1 split input in a char array
+
+2 get first char - firstChar
+
+3 check if firstChar is G
+	Create pair [G,C]
+
+4 else if firstChar is C
+	Create pair [C,G]
+
+5 else if firstChar is A
+	Create pair [A,T]
+6 else if firstChar is A
+	Create pair [A,T]    OR 
+6 Create pair [T,A]
+
+End if == represents closing bracket
+
+7 push to dna strand
+8 repeat step 3 for additional chars
+9 return dna strand
+
+
+
+
+
+SpinalTapCase
+Input: A string may contain an unlimited amount of words, with and without spaces. Words may be denoted by an uppercase character, spaces, dashes and underscores.
+
+Output: Return a string in all lowercase with dashes connecting all words.
+
+
+1. Insert a space before capital letters
+2. Replace all spaces with dashes
+3. Replace all underscores with dashes
+4. Convert all letters to lowercase
+5. Return spinal-case string
+
+function spinalCase(str) {
+  // "It's such a fine line between stupid, and clever."
+  // --David St. Hubbins
+  return str;
+}
+spinalCase('This Is Spinal Tap');
+Convert a string to spinal case. Spinal case is all-lowercase-words-joined-by-dashes.
+RegExp
+String.prototype.replace()
+g global match; find all matches rather than stopping after the first match
+i  is a modifier (modifies the search to be case-insensitive)
+m Perform multiline matching
+.search finds first match only
+https://www.w3schools.com/js/js_regexp.asp
+https://javascript.info/regexp-methods
+ 
+
+Sum All Primes
+Input:
+Output:
+From one number -- parse out all prime numbers then sum those primes
+Prime number > 1
+Only divisible by one and itself
+Provided number is not a prime
+ 
+10
+2,3,5,7 = 17
+sumOfPrimes for 10 = 17
+ 
+Iterate in for loop == 
+if n /  2 push 2 to array
+If n / 3 push to array
+If n / 3 push to array
+If n not divisible by 2 3 and 5 push to array
+Sum array
+Return sum
+const sum = [1, 2, 3].reduce(function(result, item) {
+return result + item;
+}, 0);
+console.log(sum);
+ 
+ 
+If %2 === 0 push to array
+If % 3 ===0 push to array
+If % 5 ===0 push to array
+If % 7 ===0 push to array
+Could use map for %
+Var i =  num >= num
+ 
+for (i =1; i =<num; i++) {
+ 
+}
+ 
+If a number is not divisible by 2,3,5,7 push to array
+ 
+Factors
+4
+Count 1-4
+Muiltiply 1x1
+1x2
+2x3
+6x4
+24x5
+ 
+
+FCC Truncate a String
+Input:
+Output:
+ 
