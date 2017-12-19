@@ -90,6 +90,41 @@ https://javascript.info/regexp-methods
  
 
 Sum All Primes
+
+Sum All Primes
+Input: a number, integer/whole number, positive numbers, the number can’t be a prime number, or < 1
+Output: number,  sum all prime numbers starting with 2 and including the input number
+(Keep a number a number not array -- use the same data type as input)
+Prime number: only divisible by one and itself
+Example
+sumOfPrimes(10):  2,3,5,7 = 17
+Solution
+Running total = 0
+Start with 2 up to and including 10
+Check if prime
+Add number to running total
+Repeat with next number
+Else not prime
+Repeat with next number
+Return running total
+ 
+ 
+Is Prime
+Input: number, positive
+Output: true or false
+Example:
+input 2 Output: true
+Input 10 output: false
+Primalirty test
+Start with 2 through the input -1
+	Check if input is divisible by number
+		Not prime(return false)
+	If not divisible
+		Repeat with next number
+If get to the end of loop know that inout can’t be divisible by anything but itself
+	is prime(return true)
+
+
 Input:
 Output:
 From one number -- parse out all prime numbers then sum those primes
@@ -135,7 +170,8 @@ Muiltiply 1x1
 2x3
 6x4
 24x5
- 
+
+
 
 FCC Truncate a String
 Input:
