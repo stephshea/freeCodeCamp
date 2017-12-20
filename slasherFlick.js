@@ -1,5 +1,5 @@
-function slasher(arr, howMany) {
- var newArr = arr.splice(0, howMany);
+function slasher(arr, n) {
+ var newArr = arr.splice(0, n);
   return arr;
 }
 
