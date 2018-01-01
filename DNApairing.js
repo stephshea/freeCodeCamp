@@ -1,3 +1,19 @@
+//another more efficient solution
+function pairElement(str) {
+	var pairs = {
+		"C": "G",
+		"G": "C",
+		"T": "A",
+		"A": "T"
+	};
+	return str.split("").map(function(item) {
+		return [item, pairs[item]];
+//same as in for (var elem in data) {
+//console.log(elem, data[elem];)};*/		
+	});
+}
+pairElement("GCG");
+
 //my code
 function pairElement(str) {
 	 var mainArray = [];
@@ -20,12 +36,15 @@ pairElement("CGCTAGCA");
 //more efficient
 
 function pairElement(str) {
-	 var dnaMap = {C:"G", G:"C", A:"T", T:"A"};
-  
-  
-  var pairArray = [];
+	var dnaMap = {
+		C: "G",
+		G: "C",
+		A: "T",
+		T: "A"
+	};
+	var pairArray = [];
 	for (var i = 0; i < str.length; i++) {
-      pairArray.push([str[i], dnaMap[str[i]]]);
+		pairArray.push([str[i], dnaMap[str[i]]]);
 	}
 	return pairArray;
 }
