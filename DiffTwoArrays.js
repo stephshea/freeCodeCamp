@@ -1,3 +1,16 @@
+//two solutions
+function diffArray(arr1, arr2) {
+	var fullArr = arr1.concat(arr2);
+	return fullArr.filter(function(num) {
+		if (arr1.indexOf(num) === -1 || arr2.indexOf(num) === -1) {
+			return num;
+		}
+	});
+	// Same, same; but different.
+}
+diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]);
+
+
 function diffArray(arr1, arr2) {
 	var newArr = [];
 	for (var i = 0; i < arr1.length; i++) {
