@@ -17,3 +17,14 @@ function confirmEnding(str, target) {
 	return target === str.slice(-Math.abs(target.length));
 }
 confirmEnding("Bastian", "n");
+
+function confirmEnding(str, target) {
+	return target === str.substring(-Math.abs(target.length));
+}
+confirmEnding("Bastian", "n");
+
+function confirmEnding(str, target) {
+   return target === str.substr(- target.length);  
+}
+
+confirmEnding("Bastian", "n");
