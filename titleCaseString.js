@@ -9,8 +9,8 @@ function titleCase(str) {
 titleCase("I'm a little tea pot");
 
 function titleCase(str) {
-	var words = str.toLowerCase().split(" ").map(function(abby) {
-		return abby[0].toUpperCase() + abby.slice(1);
+	var words = str.toLowerCase().split(" ").map(function(word) {
+		return word[0].toUpperCase() + word.slice(1);
 	});
 	return words.join(" ");
 }
