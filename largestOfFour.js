@@ -23,7 +23,7 @@ function largestOfFour(arr) {
 		//inner loop, iterate thru subarrays
 		for (var j = 0; j < arr[i].length; j++) {
 			var currentElem = arr[i][j];
-			if (currentElem > tempMax) {
+			if (currentElem >= tempMax) {
 				tempMax = currentElem;
 			}
 		}
