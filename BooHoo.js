@@ -1,3 +1,15 @@
+// most efficient
+function booWho(bool) {
+  return typeof bool === "boolean";
+}
+booWho(null);
+
+// more efficient
+function booWho(bool) {
+  return bool === true || bool === false;
+}
+booWho(null);
+
 //efficient 
 function booWho(bool) {
   if(typeof(bool) === "boolean"){
