@@ -6,3 +6,13 @@ function factorialize(num) {
 	return result;
 }
 factorialize(5);
+
+function factorialize(num) {
+    var total = 1;
+    for(var i = num-1; i > 0; i--)
+    {
+    	total = num *= i;
+    }
+    return total; 
+}
+factorialize(5);
